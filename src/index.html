@@ -1,93 +1,218 @@
 @@include("_head.html", {"class":"home"}) 
 @@include("_header.html") 
-<main class="main"> 
-	<div class="main__content catalog">
-		<div class="catalog__head">
-			<h1 class="catalog__title">Афиша</h1>
-			<ul class="catalog__filter menu-3">
-				<li class="menu-3__item"><a href="./">Все</a></li>
-				<li class="menu-3__item"><a href="./">Июнь</a></li>
-				<li class="menu-3__item"><a href="./">Июль</a></li>
-				<li class="menu-3__item"><a href="./">Август</a></li>
-				<li class="menu-3__item">
-					<select class="select">
-						<option value="0">Все категории</option>
-						<option value="1">Выставка</option>
-						<option value="2">Онлайн-выставка</option>
-					</select>
-				</li>
-			</ul>
+
+<section class="culture container">
+	<div class="culture__inner">
+		<div class="culture__side">
+			<h2 class="culture__title">
+				<div>
+					<span>Самые</span>
+					<span>значимые</span>
+				</div>
+				<div>
+					<span>культурные</span>
+					<span>события</span>
+				</div>
+				<div>
+					<span>этого</span>
+					<span>месяца</span>
+				</div>
+			</h2>
+			<div class="culture__info"></div>
 		</div>
-		<div class="catalog__items">
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-1.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Онлайн-выставка «Подношение десяти драгоценностей»</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-2.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Информационно- образовательный центр «Русский музей: виртуальный филиал»</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-3.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка «Три святыни буддизма»</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-4.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка, посвященная 310-летиюсо дня рождения Хамбо Ламбы Д.Д.Заяеву</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-5.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка «Симфония красок»</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-6.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">INCALZANDO: Агунда Кулаева</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-1.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Онлайн-выставка «Подношение десяти драгоценностей»</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-2.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Информационно-образовательный центр «Русский музей: виртуальный филиал»</p>
-			</div>
-			<div class="catalog__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-3.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка «Три святыни буддизма»</p>
+		<div class="culture__slider">
+			<div class="culture__items">
+				<div class="culture__item">
+					<div class="culture__item-image"><img src="./images/stuff/culture__image-1.png" alt=""></div>
+					<div class="culture__item-info">
+						<p>Ирина Левкович рассказала о культурных планах Забайкальского Края на конец 2021 года.</p>
+						<span>Вчера, в 15.07</span>
+					</div>
+				</div>
+				<div class="culture__item">
+					<div class="culture__item-image"><img src="./images/stuff/culture__image-1.png" alt=""></div>
+					<div class="culture__item-info">
+						<p>Ирина Левкович рассказала о культурных планах Забайкальского Края на конец 2021 года.</p>
+						<span>Вчера, в 15.07</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="main__side sidebar">
-		<a class="sidebar__poster" href="./"><img src="./images/stuff/sidebar__poster-1.png" alt=""></a>
-		<a class="sidebar__poster" href="./"><img src="./images/stuff/sidebar__poster-1.png" alt=""></a>
-		<div class="sidebar__block">
-			<h2 class="sidebar__block-title">Новости</h2>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-brief" href="./">Семейский коллектив из Забайкалья получил крупный федеральный грант на поддержку творческой деятельности</a>
+</section>
+
+<section class="news container">
+	<h2 class="news__title title">Новости</h2>
+	<div class="news__inner">
+		<div class="news__items">
+			<div class="news__item n-card">
+				<div class="n-card__side">
+					<span class="n-card__date">Вчера, в 15:07</span>
+					<h4 class="n-card__title">Ирина Левкович поблагодарила работников культуры Забайкалья за организацию празднования Дня Победы</h2>
+					<p class="n-card__brief">Публикуем открытое письмо министра культуры Забайкальского края Ирины Левкович к работникам отрасли.</p>
+				</div>
+				<a class="n-card__image" href="./"><img src="./images/stuff/n-card__image-1.png" alt=""></a>
 			</div>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-brief" href="./">Министр культуры Забайкалья пригласила читинцев станцевать вальс Победы 9 мая</a>
+			<div class="news__item n-card">
+				<div class="n-card__side">
+					<span class="n-card__date">Вчера, в 13:17</span>
+					<h4 class="n-card__title">Музей под открытым небом в Чите посетило более тысячи человек</h2>
+					<p class="n-card__brief">Крупный региональный проект - музей под открытым небом «Война и Победа глазами забайкальцев» начал работу в Чите 9 мая. Масштабная экспозиция повествует о разных сферах жизни общества в годы Великой Отечественной войны.</p>
+				</div>
+				<a class="n-card__image" href="./"><img src="./images/stuff/n-card__image-2.png" alt=""></a>
 			</div>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-brief" href="./">Ирина Левкович выразила огромную благодарность за подготовку к чему-то там..</a>
+			<div class="news__item n-card">
+				<div class="n-card__side">
+					<span class="n-card__date">Вчера, в 10:24</span>
+					<h4 class="n-card__title">Матч жизни и рекорд по отжиманиям: Марафон «Спорт – Победе» прошел на «Локомотиве» в Чите</h2>
+					<p class="n-card__brief">Марафон «Спорт – Победе» стал главным спортивным событием 8 мая в Чите, посвященным 76-й годовщине Победы в Великой Отечественной войне. Основное действие развернулось на стадионе «Локомотив». Забайкальцам представили выступления...</p>
+				</div>
+				<a class="n-card__image" href="./"><img src="./images/stuff/n-card__image-3.png" alt=""></a>
 			</div>
+			<div class="news__item n-card">
+				<div class="n-card__side">
+					<span class="n-card__date">В понедельник, в 20:44</span>
+					<h4 class="n-card__title">Забайкалье присоединилось к федеральной акции «Торт для победителей»</h2>
+					<p class="n-card__brief">Публикуем открытое письмо министра культуры Забайкальского края Ирины Левкович к работникам отрасли.</p>
+				</div>
+				<a class="n-card__image" href="./"><img src="./images/stuff/n-card__image-4.png" alt=""></a>
+			</div>
+			<div class="news__item n-card">
+				<div class="n-card__side">
+					<span class="n-card__date">Вчера, в 13:17</span>
+					<h4 class="n-card__title">Музей под открытым небом в Чите посетило более тысячи человек</h2>
+					<p class="n-card__brief">Крупный региональный проект - музей под открытым небом «Война и Победа глазами забайкальцев» начал работу в Чите 9 мая. Масштабная экспозиция повествует о разных сферах жизни общества в годы Великой Отечественной войны.</p>
+				</div>
+				<a class="n-card__image" href="./"><img src="./images/stuff/n-card__image-1.png" alt=""></a>
+			</div>
+			<div class="news__item n-card">
+				<div class="n-card__side">
+					<span class="n-card__date">Вчера, в 15:07</span>
+					<h4 class="n-card__title">Ирина Левкович поблагодарила работников культуры Забайкалья за организацию празднования Дня Победы</h2>
+					<p class="n-card__brief">Публикуем открытое письмо министра культуры Забайкальского края Ирины Левкович к работникам отрасли.</p>
+				</div>
+				<a class="n-card__image" href="./"><img src="./images/stuff/n-card__image-2.png" alt=""></a>
+			</div>
+			<a class="news__more" href="./">Показать еще..</a>
 		</div>
-		<div class="sidebar__block">
-			<h2 class="sidebar__block-title"></h2>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-image" href="./"><img src="./images/stuff/card__image-1.png" alt=""></a>
-				<p class="sidebar__block-brief">Открытие нового архивохранилища, расположенного на ул. Ранжурова, 8</p>
+		<div class="news__side sidebar">
+			<a class="sidebar__poster" href="./"><img src="./images/stuff/sidebar__poster-1.png" alt=""></a>
+			<a class="sidebar__poster" href="./"><img src="./images/stuff/sidebar__poster-2.png" alt=""></a>
+		</div>
+	</div>
+</section>
+
+<section class="articles">
+	<div class="container">
+		<h2 class="articles__title title">Статьи</h2>
+		<div class="articles__slider">
+			<div class="articles__item">
+				<a class="articles__image" href="./"><img src="./images/stuff/articles__image-1.png" alt=""></a>
+				<span class="articles__date">Вчера, в 13.17</span>
+				<h4 class="articles__item-title">А хилок по прежнему бурлит</h3>
+				<p class="articles__brief">В Крыму подвели итоги Всероссийского конкурса молодежных проектов в рамках образовательного заезда..</p>
+			</div>
+			<div class="articles__item">
+				<a class="articles__image" href="./"><img src="./images/stuff/articles__image-1.png" alt=""></a>
+				<span class="articles__date">Вчера, в 13.17</span>
+				<h4 class="articles__item-title">А хилок по прежнему бурлит</h3>
+				<p class="articles__brief">В Крыму подвели итоги Всероссийского конкурса молодежных проектов в рамках образовательного заезда..</p>
+			</div>
+			<div class="articles__item">
+				<a class="articles__image" href="./"><img src="./images/stuff/articles__image-1.png" alt=""></a>
+				<span class="articles__date">Вчера, в 13.17</span>
+				<h4 class="articles__item-title">А хилок по прежнему бурлит</h3>
+				<p class="articles__brief">В Крыму подвели итоги Всероссийского конкурса молодежных проектов в рамках образовательного заезда..</p>
 			</div>
 		</div>
 	</div>
-</main> 
+</section>
+
+<section class="posters container">
+	<h2 class="posters__title title">Афиша</h2>
+	<div class="posters__slider">
+		<div class="posters__item">
+			<a class="posters__image" href="./"><img src="./images/stuff/n-card__image-1.png" alt=""></a>
+			<h4 class="posters__item-title">31 октября по 25 мая</h4>
+			<p class="posters__descr">Онлайн-выставка «Подношение десяти драгоценностей»</p>
+		</div>
+		<div class="posters__item">
+			<a class="posters__image" href="./"><img src="./images/stuff/n-card__image-2.png" alt=""></a>
+			<h4 class="posters__item-title">1 октября по 31 декабря</h4>
+			<p class="posters__descr">Информационно-образовательный центр «Русский музей: виртуальный филиал»</p>
+		</div>
+		<div class="posters__item">
+			<a class="posters__image" href="./"><img src="./images/stuff/n-card__image-3.png" alt=""></a>
+			<h4 class="posters__item-title">1 октября по 31 декабря</h4>
+			<p class="posters__descr">Выставка «Три святыни буддизма»</p>
+		</div>
+	</div>
+</section>
+
+<section class="media">
+	<div class="container">
+		<h2 class="media__title title">Медиа</h2>
+		<div class="media__image">
+			<img src="./images/stuff/media__image-big.png" alt="">
+			<div class="media__image-data">
+				<span>8 августа, в 8:52</span>
+				<p>Открытие нового архивохранилища, расположенного на ул. Ранжурова, 8</p>
+			</div>
+		</div>
+		<div class="media__slider">
+			<div class="media__item">
+				<a class="media__item-image" href="./"><img src="./images/stuff/media__image-1.png" alt=""></a>
+				<span class="media__date">сегодня в 21.50</span>
+				<p class="media__descr">Четыре дня в прямом эфире. «Золотой голос Байкала» назвал победителей</p>
+			</div>
+			<div class="media__item">
+				<a class="media__item-image" href="./"><img src="./images/stuff/media__image-1.png" alt=""></a>
+				<span class="media__date">сегодня в 21.50</span>
+				<p class="media__descr">Четыре дня в прямом эфире. «Золотой голос Байкала» назвал победителей</p>
+			</div>
+			<div class="media__item">
+				<a class="media__item-image" href="./"><img src="./images/stuff/media__image-1.png" alt=""></a>
+				<span class="media__date">сегодня в 21.50</span>
+				<p class="media__descr">Четыре дня в прямом эфире. «Золотой голос Байкала» назвал победителей</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="catalog container">
+	<h2 class="catalog__title title">Каталог искусства и народного творчества</h2>
+	<div class="catalog__slider">
+		<div class="catalog__item">
+			<a class="catalog__image" href="./"><img src="./images/stuff/catalog__image-1.png" alt=""></a>
+			<span class="catalog__prise">20 000 рублей</span>
+			<p class="catalog__descr">Картина «Кукушка, сколько мне лет?»</p>
+		</div>
+		<div class="catalog__item">
+			<a class="catalog__image" href="./"><img src="./images/stuff/catalog__image-2.png" alt=""></a>
+			<span class="catalog__prise">15 000 рублей</span>
+			<p class="catalog__descr">Картина «Кукушка, сколько мне лет?»</p>
+		</div>
+		<div class="catalog__item">
+			<a class="catalog__image" href="./"><img src="./images/stuff/catalog__image-3.png" alt=""></a>
+			<span class="catalog__prise">5 000 рублей</span>
+			<p class="catalog__descr">Картина «Кукушка, сколько мне лет?»</p>
+		</div>
+		<div class="catalog__item">
+			<a class="catalog__image" href="./"><img src="./images/stuff/catalog__image-4.png" alt=""></a>
+			<span class="catalog__prise">20 000 рублей</span>
+			<p class="catalog__descr">Картина «Кукушка, сколько мне лет?»</p>
+		</div>
+		<div class="catalog__item">
+			<a class="catalog__image" href="./"><img src="./images/stuff/catalog__image-5.png" alt=""></a>
+			<span class="catalog__prise">120 000 рублей</span>
+			<p class="catalog__descr">Картина «Кукушка, сколько мне лет?»</p>
+		</div>
+		<div class="catalog__item">
+			<a class="catalog__image" href="./"><img src="./images/stuff/catalog__image-6.png" alt=""></a>
+			<span class="catalog__prise">20 000 рублей</span>
+			<p class="catalog__descr">Картина «Кукушка, сколько мне лет?»</p>
+		</div>
+	</div>
+</section>
+
 @@include("_bottom.html") 
