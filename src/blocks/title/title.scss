@@ -4,13 +4,19 @@
 	font-family: "MR", sans-serif;
 	font-size: 34px;
 	line-height: 1.2em;
+	display: flex;
+	align-items: center;
 
 	&::after {
-		display: inline-block;
+		display: block;
 		content: '';
 		width: 20px;
 		height: 20px;
 		margin-left: 5px;
 		background: url('#{$images-path}icons-sprite.svg#icon-arr_right-view-dark') center bottom/ 10px 15px no-repeat transparent;
+		
+		@include media('<=sm') {
+			margin-left: auto;
+		}
 	}
 }

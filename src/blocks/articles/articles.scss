@@ -1,7 +1,7 @@
 .articles {
 	$self: &;
 	background-color: #e1e1e1;
-	padding: 40px 0;
+	padding: 40px 0 50px;
 
 	&__title {
 		margin-bottom: 30px;
@@ -11,6 +11,7 @@
 		max-width: 100%;
 		overflow: hidden;
 		position: relative;
+		padding-bottom: 40px;
 	}
 
 	&__items {
@@ -19,6 +20,16 @@
 
 		.owl-nav {
 			display: block !important;
+		}
+
+		.owl-dots {
+			display: flex !important;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
 		}
 
 		@include media('<=xxs') {
@@ -81,6 +92,25 @@
 		
 		@include media('<=xxs') {
 			top: 27%;
+		}
+	}
+
+	&__dot {
+		display: block;
+		appearance: none;
+		background: #444;
+		box-shadow: none;
+		border: none;
+		padding: 0;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		margin: 0 5px;
+		cursor: pointer;
+
+		&.active {
+			width: 10px;
+			height: 10px;
 		}
 	}
 }
