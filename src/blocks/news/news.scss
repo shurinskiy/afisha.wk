@@ -14,21 +14,38 @@
 	&__items {
 		margin: 0 10px;
 		width: calc(100% / 4*3 - 20px );
+		
+		@include media('<=sm') {
+			width: calc(100% - 20px );
+		}
 	}
 	
 	&__item {
 		margin-bottom: 20px;
+		
+		&:last-of-type {
+			margin-bottom: 50px;
+		}
 	}
 	
 	&__more {
-		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 15px 0;
+		background-color: #ab8ac4;
+		border-radius: 10px;
+		color: #fff;
+		font-size: 18px;
+		text-decoration: none;
 	}
 	
 	&__side {
 		margin: 0 10px;
 		width: calc(100% / 4 - 20px );
-		// width: calc(100% / );
 
+		@include media('<=sm') {
+			display: none;
+		}
 	}
-
 }
