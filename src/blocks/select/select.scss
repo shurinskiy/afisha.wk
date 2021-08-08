@@ -1,4 +1,33 @@
 .select {
 	$self: &;
+	display: inline-flex;
+	box-sizing: border-box;
+	position: relative;
+	color: #000;
+	border: none;
+	background: none;
 
+	&::after {
+		display: block;
+		content: '';
+		width: 11px;
+		height: 6px;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-dark') center / 11px 6px no-repeat transparent;
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	select {
+		border-radius: 10px;
+		box-sizing: border-box;
+		background: none;
+		appearance: none;
+		outline: none;
+		border: none;
+		height: 100%;
+		padding: 0 30px 0 0;
+		cursor: pointer;
+	}
 }

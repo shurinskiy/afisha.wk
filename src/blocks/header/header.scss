@@ -157,6 +157,12 @@
 	}
 
 	&__search {
+		display: block;
+		appearance: none;
+		background: none;
+		box-shadow: none;
+		cursor: pointer;
+		border: none;
 		width: 60px;
 		height: 37px;
 		margin-left: -50px;
@@ -165,5 +171,13 @@
 		@include media('<=md') {
 			margin-left: 0px;
 		}
+
+		&:checked ~ #{$self}__search-form {
+			display: flex;
+		}
+	}
+
+	&__search-form {
+		display: none;
 	}
 }

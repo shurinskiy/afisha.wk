@@ -1,7 +1,47 @@
 .sidebar {
 	$self: &;
 
-	&__poster {
+	&__item {
+
+		&_poster {
+			display: block;
+			overflow: hidden;
+			border-radius: 10px;
+			margin-bottom: 20px;
+	
+			> img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&_block {
+
+		}
+	}
+
+	&__content {
+		
+	}
+
+	&__title {
+		color: #4f4f4f;
+		font-family: "MR", sans-serif;
+		font-size: 30px;
+		line-height: 1.1;
+		margin-bottom: 15px;
+	}
+	
+	&__brief {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		margin-bottom: 20px;
+	}
+
+	&__image {
 		display: block;
 		overflow: hidden;
 		border-radius: 10px;
@@ -14,25 +54,4 @@
 			object-fit: cover;
 		}
 	}
-
-	&__block {
-
-	}
-
-	&__block-title {
-
-	}
-
-	&__block-item {
-
-	}
-
-	&__block-brief {
-
-	}
-
-	&__block-image {
-
-	}
-
 }

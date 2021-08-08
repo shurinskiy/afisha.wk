@@ -2,23 +2,40 @@
 	$self: &;
 
 	&__head {
-
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	&__title {
-
+		font-family: "BB", sans-serif;
+		font-size: 36px;
+		line-height: 1.2;
+		margin-right: 40px;
 	}
 
 	&__filter {
-
+		display: flex;
 	}
 
 	&__items {
-
+		margin: 0 -10px;
+		display: flex;
+		flex-wrap: wrap;
 	}
-
+	
 	&__item {
-
+		margin: 0 10px 30px;
+		width: calc(100% / 3 - 20px);
+		
+		@include media('<=md') {
+			width: calc(100% / 2 - 20px);
+		}
+		
+		@include media('<=xxxs') {
+			width: calc(100% - 20px);
+		}
 	}
-
 }

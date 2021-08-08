@@ -1,15 +1,17 @@
-<!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-	<meta charset="UTF-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-	<link rel="shortcut icon" href="images/favicon.ico"> 
-	<link rel="stylesheet" href="style.css"> 
-	<title></title> 
-</head> 
-<body class=""> 
- 
-<header class="header"> 
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<title></title>
+</head>
+
+<body class="">
+
+	<header class="header">
 		<div class="header__slider owl-carousel">
 			<div class="header__slider-item"><img src="./images/stuff/header__slide.png" alt=""></div>
 			<div class="header__slider-item"><img src="./images/stuff/header__slide.png" alt=""></div>
@@ -17,12 +19,12 @@
 		<div class="header__bottom">
 			<div class="header__inner wrapper">
 				<span class="header__menu-open"></span>
-				<a class="header__logo" href=""><img src="./images/logo.png" alt=""></a>
+				<a class="header__logo" href="./"><img src="./images/logo.png" alt=""></a>
 				<div class="header__side">
 					<nav class="header__navi">
 						<span class="header__menu-close"></span>
 						<ul class="header__menu-1 menu-1">
-							<li class="menu-1__item"><a href="./">Учреждения культуры</a></li>
+							<li class="menu-1__item"><a href="./page.html">Учреждения культуры</a></li>
 							<li class="menu-1__item"><a href="./">Кружки</a></li>
 							<li class="menu-1__item"><a href="./">Каталог народного творчества</a></li>
 							<li class="menu-1__item"><a href="./">Галерея объектов культуры</a></li>
@@ -45,123 +47,129 @@
 							</li>
 						</ul>
 					</nav>
-					<a class="header__search" href="./"></a>
+					<input class="header__search" type="checkbox">
+					<div class="header__search-form search">
+						<form class="search__form" action="./">
+							<input class="search__query" type="text" placeholder="Поиск">
+							<input class="search__submit" type="submit" value="">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-</header> 
-<main class="page"> 
-	<div class="page__content affiche">
-		<div class="affiche__head">
-			<h1 class="affiche__title">Афиша</h1>
-			<ul class="affiche__filter menu-3">
-				<li class="menu-3__item"><a href="./">Все</a></li>
-				<li class="menu-3__item"><a href="./">Июнь</a></li>
-				<li class="menu-3__item"><a href="./">Июль</a></li>
-				<li class="menu-3__item"><a href="./">Август</a></li>
-				<li class="menu-3__item">
-					<select class="select">
-						<option value="0">Все категории</option>
-						<option value="1">Выставка</option>
-						<option value="2">Онлайн-выставка</option>
-					</select>
-				</li>
-			</ul>
-		</div>
-		<div class="affiche__items">
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-1.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Онлайн-выставка «Подношение десяти драгоценностей»</p>
+	</header>
+	<main class="page wrapper">
+		<div class="page__content affiche">
+			<div class="affiche__head">
+				<h1 class="affiche__title">Афиша</h1>
+				<ul class="affiche__filter menu-3">
+					<li class="menu-3__item active"><a href="./">Все</a></li>
+					<li class="menu-3__item"><a href="./">Июнь</a></li>
+					<li class="menu-3__item"><a href="./">Июль</a></li>
+					<li class="menu-3__item"><a href="./">Август</a></li>
+					<li class="menu-3__item select">
+						<select>
+							<option value="0">Все категории</option>
+							<option value="1">Выставка</option>
+							<option value="2">Онлайн-выставка</option>
+						</select>
+					</li>
+				</ul>
 			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-2.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Информационно- образовательный центр «Русский музей: виртуальный филиал»</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-3.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка «Три святыни буддизма»</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-4.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка, посвященная 310-летиюсо дня рождения Хамбо Ламбы Д.Д.Заяеву</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-5.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка «Симфония красок»</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-6.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">INCALZANDO: Агунда Кулаева</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-1.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Онлайн-выставка «Подношение десяти драгоценностей»</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-2.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Информационно-образовательный центр «Русский музей: виртуальный филиал»</p>
-			</div>
-			<div class="affiche__item card">
-				<a href="./" class="card__image"><img src="./images/stuff/card__image-3.png" alt=""></a>
-				<h3 class="card__title">1 октября - 31 декабря</h3>
-				<p class="card__brief">Выставка «Три святыни буддизма»</p>
-			</div>
-		</div>
-	</div>
-	<div class="page__side sidebar">
-		<a class="sidebar__poster" href="./"><img src="./images/stuff/sidebar__poster-1.png" alt=""></a>
-		<a class="sidebar__poster" href="./"><img src="./images/stuff/sidebar__poster-1.png" alt=""></a>
-		<div class="sidebar__block">
-			<h2 class="sidebar__block-title">Новости</h2>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-brief" href="./">Семейский коллектив из Забайкалья получил крупный федеральный грант на поддержку творческой деятельности</a>
-			</div>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-brief" href="./">Министр культуры Забайкалья пригласила читинцев станцевать вальс Победы 9 мая</a>
-			</div>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-brief" href="./">Ирина Левкович выразила огромную благодарность за подготовку к чему-то там..</a>
+			<div class="affiche__items">
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-1.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Онлайн-выставка «Подношение десяти драгоценностей»</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-2.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Информационно- образовательный центр «Русский музей: виртуальный филиал»
+					</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-3.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Выставка «Три святыни буддизма»</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-4.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Выставка, посвященная 310-летиюсо дня рождения Хамбо Ламбы Д.Д.Заяеву</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-5.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Выставка «Симфония красок»</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-6.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">INCALZANDO: Агунда Кулаева</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-1.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Онлайн-выставка «Подношение десяти драгоценностей»</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-2.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Информационно-образовательный центр «Русский музей: виртуальный филиал»</p>
+				</div>
+				<div class="affiche__item p-card">
+					<a href="./" class="p-card__image"><img src="./images/stuff/card__image-3.png" alt=""></a>
+					<h3 class="p-card__title">1 октября - 31 декабря</h3>
+					<p class="p-card__brief">Выставка «Три святыни буддизма»</p>
+				</div>
 			</div>
 		</div>
-		<div class="sidebar__block">
-			<h2 class="sidebar__block-title"></h2>
-			<div class="sidebar__block-item">
-				<a class="sidebar__block-image" href="./"><img src="./images/stuff/card__image-1.png" alt=""></a>
-				<p class="sidebar__block-brief">Открытие нового архивохранилища, расположенного на ул. Ранжурова, 8</p>
+		<div class="page__side sidebar">
+			<a class="sidebar__item sidebar__item_poster" href="./"><img src="./images/stuff/sidebar__poster-1.png"
+					alt=""></a>
+			<a class="sidebar__item sidebar__item_poster" href="./"><img src="./images/stuff/sidebar__poster-1.png"
+					alt=""></a>
+			<div class="sidebar__item sidebar__item_block">
+				<h2 class="sidebar__title">Новости</h2>
+				<a class="sidebar__brief" href="./">Семейский коллектив из Забайкалья получил крупный федеральный грант
+					на поддержку творческой деятельности</a>
+				<a class="sidebar__brief" href="./">Министр культуры Забайкалья пригласила читинцев станцевать вальс
+					Победы 9 мая</a>
+				<a class="sidebar__brief" href="./">Ирина Левкович выразила огромную благодарность за подготовку к
+					чему-то там..</a>
+			</div>
+			<div class="sidebar__item sidebar__item_block">
+				<h2 class="sidebar__title"></h2>
+				<div class="sidebar__content">
+					<a class="sidebar__image" href="./"><img src="./images/stuff/card__image-1.png" alt=""></a>
+					<p class="sidebar__brief">Открытие нового архивохранилища, расположенного на ул. Ранжурова, 8</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</main> 
-<footer class="footer"> 
-	<div class="wrapper">
-		<div class="footer__top">
-			<nav class="footer__menu">
-				<a class="footer__menu-link" href="./">О проекте</a>
-				<a class="footer__menu-link" href="./">Реклама</a>
-				<a class="footer__menu-link" href="./">Контакты</a>
-				<a class="footer__menu-link" href="./">Правила обработки персональных данных</a>
-				<a class="footer__menu-link" href="./">Использование куки</a>
-			</nav>
-			<div class="footer__socials">
-				<a class="footer__socials-item footer__socials-item_yout" href="./"></a>
-				<a class="footer__socials-item footer__socials-item_vk" href="./"></a>
-				<a class="footer__socials-item footer__socials-item_tgm" href="./"></a>
-				<a class="footer__socials-item footer__socials-item_tw" href="./"></a>
+	</main>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__top">
+				<nav class="footer__menu">
+					<a class="footer__menu-link" href="./">О проекте</a>
+					<a class="footer__menu-link" href="./">Реклама</a>
+					<a class="footer__menu-link" href="./">Контакты</a>
+					<a class="footer__menu-link" href="./">Правила обработки персональных данных</a>
+					<a class="footer__menu-link" href="./">Использование куки</a>
+				</nav>
+				<div class="footer__socials">
+					<a class="footer__socials-item footer__socials-item_yout" href="./"></a>
+					<a class="footer__socials-item footer__socials-item_vk" href="./"></a>
+					<a class="footer__socials-item footer__socials-item_tgm" href="./"></a>
+					<a class="footer__socials-item footer__socials-item_tw" href="./"></a>
+				</div>
 			</div>
+			<div class="footer__copy">2021 &copy; Министерство культуры Забайкальского края</div>
 		</div>
-		<div class="footer__copy">2021 &copy; Министерство культуры Забайкальского края</div>
-	</div>
-</footer> 
-<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
-<script src="common.js"></script> 
-</body> 
-</html> 
- 
+	</footer>
+	<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+	<script src="common.js"></script>
+</body>
+
+</html>

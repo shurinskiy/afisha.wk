@@ -160,14 +160,14 @@
 		padding: 0;
 		margin: 0 20px;
 		cursor: pointer;
-		box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
+		// box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
 	}
 
 	&__prev {
-		background: url('#{$images-path}icons-sprite.svg#icon-arr_left-view-white') center left 11px / 10px 15px no-repeat #0c4eaf;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr_left-view-white') center left 11px / 10px 15px no-repeat #ab8ac4;
 	}
 	
 	&__next {
-		background: url('#{$images-path}icons-sprite.svg#icon-arr_right-view-white') center right 11px / 10px 15px no-repeat #830937;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr_right-view-white') center right 11px / 10px 15px no-repeat #ab8ac4;
 	}
 }

@@ -31,4 +31,5 @@ import 'owl.carousel';
 			}
 		}
 	});
+
 })();

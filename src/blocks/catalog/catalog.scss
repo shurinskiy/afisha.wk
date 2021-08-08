@@ -1,9 +1,10 @@
 .catalog {
 	$self: &;
+	padding-top: 40px;
 	margin-bottom: 50px;
 
 	&__title {
-		margin-bottom: 30px !important;
+		margin-bottom: 40px !important;
 	}
 
 	&__slider {

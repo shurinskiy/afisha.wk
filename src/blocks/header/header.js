@@ -9,7 +9,13 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 		items: 1,
 		margin: 0,
 		dots: false,
-		nav: false
+		nav: false,
+		onInitialized: function(e) {
+			if (! e.namespace) return;
+			if (e.item.count == 0) {
+				e.relatedTarget.$element.hide();
+			}
+		}
 	});
 
 	$('.header__menu-open, .header__menu-close').on('click', function(e) {
@@ -25,7 +31,6 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 		enablePageScroll();
 	});
-
 	
 	$(window).on('click keyup', function(e) {
 		if(($shell.hasClass('opened') && !e.target.closest('.header__navi')) || e.which == 27) {
