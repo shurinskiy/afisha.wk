@@ -1,13 +1,8 @@
 .header {
 	$self: &;
-
+	
 	&__slider {
 		height: 450px;
-
-	}
-	
-	&__slider-items {
-		height: 100%;
 		.owl-stage-outer, .owl-stage, .owl-item {
 			height: 100%;
 		}
@@ -24,35 +19,121 @@
 	}
 
 	&__bottom {
-
+		background: linear-gradient(90deg, rgba(180,151,203,1) 0%, rgba(255,255,255,1) 60%);
+		
+		@include media('<=md') {
+			background: none;
+		}
 	}
 
-	&__toggle {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
 
+	&__menu-open {
+		display: none;
+		width: 60px;
+		background: url('#{$images-path}icons-sprite.svg#icon-toggle-view-lilack') center / 34px 23px no-repeat transparent;
+		align-self: stretch;
+		cursor: pointer;
+		margin-right: 20px;
+		
+		@include media('<=md') {
+			display: block;
+		}
+	}
+
+	&__menu-close {
+		display: none;
+		width: 30px;
+		height: 30px;
+		background: url('#{$images-path}icons-sprite.svg#icon-close-view-dark') center top 0px / 25px 25px no-repeat transparent;
+		cursor: pointer;
+		position: absolute;
+		top: 25px;
+		right: 20px;
+		
+		@include media('<=md') {
+			display: block;
+		}
 	}
 
 	&__logo {
+		width: 250px;
+		margin-right: 15px;
 
+		> img {
+			max-height: 100%;
+			display: block;
+		}
+		
+		@include media('<=md') {
+			margin: 0 auto;
+		}
 	}
 
 	&__side {
-
+		display: flex;
+		padding: 15px 0;
+		flex-grow: 1;
+		
+		@include media('<=md') {
+			flex-grow: 0;
+		}
 	}
 
 	&__navi {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
 
+		@include media('<=md') {
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: flex-start;
+			justify-content: flex-start;
+			position: fixed;
+			height: 100vh;
+			z-index: 9999;
+			left: -310px; top: 0;
+			box-sizing: border-box;
+			max-width: 300px;
+			width: 100%;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			transition: left 0.3s ease-out;
+			overflow: auto;
+			padding: 70px 30px 30px;
+
+			&.opened {
+				left: 0;
+			}
+		}
 	}
 
 	&__menu-1 {
-
+		margin-bottom: 10px;
+		
+		@include media('<=md') {
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+		}
 	}
-
+	
 	&__menu-2 {
 
 	}
 
 	&__search {
+		width: 60px;
+		height: 37px;
+		margin-left: -50px;
+		background: url('#{$images-path}icons-sprite.svg#icon-zoom-view-lilack') center right 10px / 22px 22px no-repeat transparent;
 
+		@include media('<=md') {
+			margin-left: 0px;
+		}
 	}
-
 }

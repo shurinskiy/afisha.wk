@@ -10,24 +10,22 @@
 <body class=""> 
  
 <header class="header"> 
-	<div class="wrapper">
-		<div class="header__slider">
-			<div class="header__slider-items owl-carousel">
-				<div class="header__slider-item"><img src="./images/stuff/header__slide.png" alt=""></div>
-				<div class="header__slider-item"><img src="./images/stuff/header__slide.png" alt=""></div>
-			</div>
+		<div class="header__slider owl-carousel">
+			<div class="header__slider-item"><img src="./images/stuff/header__slide.png" alt=""></div>
+			<div class="header__slider-item"><img src="./images/stuff/header__slide.png" alt=""></div>
 		</div>
 		<div class="header__bottom">
-			<div class="header__inner container">
-				<span class="header__toggle"></span>
-				<a class="header__logo" href=""><img src="" alt=""></a>
+			<div class="header__inner wrapper">
+				<span class="header__menu-open"></span>
+				<a class="header__logo" href=""><img src="./images/logo.png" alt=""></a>
 				<div class="header__side">
 					<nav class="header__navi">
-						<ul class="header__menu-1">
-							<li><a href="./">Учреждения культуры</a></li>
-							<li><a href="./">Кружки</a></li>
-							<li><a href="./">Каталог народного творчества</a></li>
-							<li><a href="./">Галерея объектов культуры</a></li>
+						<span class="header__menu-close"></span>
+						<ul class="header__menu-1 menu-1">
+							<li class="menu-1__item"><a href="./">Учреждения культуры</a></li>
+							<li class="menu-1__item"><a href="./">Кружки</a></li>
+							<li class="menu-1__item"><a href="./">Каталог народного творчества</a></li>
+							<li class="menu-1__item"><a href="./">Галерея объектов культуры</a></li>
 						</ul>
 						<ul class="header__menu-2 menu-2">
 							<li class="menu-2__item"><a href="./">Афиша</a></li>
@@ -37,7 +35,7 @@
 							<li class="menu-2__item"><a href="./">Голосование</a></li>
 							<li class="menu-2__item"><a href="./">Объявления</a></li>
 							<li class="menu-2__item menu-2__item_haschild">
-								<span></span>
+								<input type="checkbox">
 								<ul class="menu-2__submenu">
 									<li class="menu-2__subitem"><a href="./">О министерстве</a></li>
 									<li class="menu-2__subitem"><a href="./">О проекте</a></li>
@@ -47,11 +45,10 @@
 							</li>
 						</ul>
 					</nav>
-					<a class="header__search" href=""></a>
+					<a class="header__search" href="./"></a>
 				</div>
 			</div>
 		</div>
-	</div>
 </header> 
  
 <main class="page"> 
@@ -145,7 +142,7 @@
 	</div>
 </main> 
 <footer class="footer"> 
-	<div class="container">
+	<div class="wrapper">
 		<div class="footer__top">
 			<nav class="footer__menu">
 				<a class="footer__menu-link" href="./">О проекте</a>
@@ -156,9 +153,9 @@
 			</nav>
 			<div class="footer__socials">
 				<a class="footer__socials-item footer__socials-item_yout" href="./"></a>
-				<a class="footer__socials-item footer__socials-item_yout" href="./"></a>
-				<a class="footer__socials-item footer__socials-item_yout" href="./"></a>
-				<a class="footer__socials-item footer__socials-item_yout" href="./"></a>
+				<a class="footer__socials-item footer__socials-item_vk" href="./"></a>
+				<a class="footer__socials-item footer__socials-item_tgm" href="./"></a>
+				<a class="footer__socials-item footer__socials-item_tw" href="./"></a>
 			</div>
 		</div>
 		<div class="footer__copy">2021 &copy; Министерство культуры Забайкальского края</div>
