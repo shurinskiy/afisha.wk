@@ -22,7 +22,5 @@ import 'owl.carousel';
 				items: 3,
 			}
 		}
-
 	});
-
 })();

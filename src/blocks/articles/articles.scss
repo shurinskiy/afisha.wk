@@ -21,6 +21,10 @@
 		overflow: hidden;
 		position: relative;
 		padding-bottom: 40px;
+		
+		@include media('<=xxs') {
+			overflow: visible;
+		}
 	}
 
 	&__items {
@@ -101,6 +105,7 @@
 		
 		@include media('<=xxs') {
 			top: 27%;
+			right: -10px;
 		}
 	}
 

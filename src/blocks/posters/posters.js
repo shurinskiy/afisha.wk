@@ -2,7 +2,7 @@ import 'owl.carousel';
 
 (() => {
 
-	$('.posters__slider').owlCarousel({
+	$('.posters__items').owlCarousel({
 		loop: true,
 		items: 3,
 		margin: 30,
@@ -18,11 +18,9 @@ import 'owl.carousel';
 			480: {
 				items: 2,
 			},
-			760: {
+			740: {
 				items: 3,
 			}
 		}
-
 	});
-
 })();

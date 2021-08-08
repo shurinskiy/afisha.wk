@@ -3,7 +3,7 @@
 	color: #4f4f4f;
 	font-family: "MR", sans-serif;
 	font-size: 34px;
-	line-height: 1.2em;
+	line-height: 1.1;
 	display: flex;
 	align-items: center;
 
@@ -17,6 +17,14 @@
 		
 		@include media('<=sm') {
 			margin-left: auto;
+		}
+	}
+
+	&_white {
+		color: #fff;
+
+		&::after {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-arr_right-view-white');
 		}
 	}
 }
