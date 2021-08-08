@@ -1,27 +1,33 @@
 .news {
 	$self: &;
+	margin-bottom: 50px !important;
 
 	&__title {
-
+		margin-bottom: 25px;
 	}
 
 	&__inner {
-
+		margin: 0 -10px;
+		display: flex;
 	}
-
+	
 	&__items {
-
+		margin: 0 10px;
+		width: calc(100% / 4*3 - 20px );
 	}
-
+	
 	&__item {
-
+		margin-bottom: 20px;
 	}
-
+	
 	&__more {
-
+		
 	}
-
+	
 	&__side {
+		margin: 0 10px;
+		width: calc(100% / 4 - 20px );
+		// width: calc(100% / );
 
 	}
 
