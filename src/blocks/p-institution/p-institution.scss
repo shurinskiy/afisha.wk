@@ -1,0 +1,25 @@
+.p-institution {
+	$self: &;
+
+	&__items {
+
+	}
+
+	&__item {
+		border-bottom: 1px solid #c5c5c5;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+
+	&__location {
+		font-size: 14px;
+		line-height: 1.3;
+		color: #8d8d8d;
+	}
+}

@@ -1,8 +1,15 @@
 import 'owl.carousel';
+import 'jquery-colorbox';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 (() => {
 	let $shell = $('.header__navi');
+
+	$(".gallery__image").colorbox({
+		rel:'gallery__image',
+		photo: true,
+		current: ""
+	});
 
 	$('.header__slider').owlCarousel({
 		loop: true,

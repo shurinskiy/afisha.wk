@@ -63,11 +63,23 @@
 		}
 
 		&_vk {
-			background: url('#{$images-path}icons-sprite.svg#icon-vk-view-white') center / 30px 18px no-repeat #787c80;
+			background: url('#{$images-path}icons-sprite.svg#icon-vk-view-white') center / 28px 17px no-repeat #787c80;
+		}
+
+		&_ok {
+			background: url('#{$images-path}icons-sprite.svg#icon-ok-view-white') center / 16px 26px no-repeat #787c80;
+		}
+
+		&_fb {
+			background: url('#{$images-path}icons-sprite.svg#icon-fb-view-white') center / 14px 28px no-repeat #787c80;
 		}
 
 		&_tgm {
 			background: url('#{$images-path}icons-sprite.svg#icon-tgm-view-white') center / 30px 22px no-repeat #787c80;
+		}
+
+		&_inst {
+			background: url('#{$images-path}icons-sprite.svg#icon-inst-view-white') center / 28px 28px no-repeat #787c80;
 		}
 
 		&_tw {

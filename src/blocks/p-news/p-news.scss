@@ -1,0 +1,11 @@
+.p-news {
+	$self: &;
+
+	&__items {
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+}

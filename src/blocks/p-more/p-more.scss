@@ -1,0 +1,15 @@
+.p-more {
+	$self: &;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0;
+	background-color: #ab8ac4;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	margin: auto auto 40px;
+	width: 100%;
+	max-width: 600px;
+}

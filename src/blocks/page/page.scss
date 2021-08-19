@@ -1,19 +1,60 @@
 .page {
 	$self: &;
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-gap: 20px;
-	
-	@include media('<=md') {
-		grid-template-columns: 2fr 1fr;
+
+	&__title {
+		margin-right: 40px;
 	}
-	
-	@include media('<=xs') {
-		display: block;
+
+	&__head {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	&__filter {
+		display: flex;
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 20px;
+		
+		@include media('<=md') {
+			grid-template-columns: 2fr 1fr;
+		}
+		
+		@include media('<=xs') {
+			display: block;
+		}
+
+		&_wide {
+			@include media('<=sm') {
+				display: block;
+			}
+
+			#{$self}__side {
+				@include media('<=sm') {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr );
+					grid-gap: 20px;
+				}
+
+				@include media('<=xs') {
+					grid-template-columns: repeat(2, 1fr );
+				}
+
+				@include media('<=xxxs') {
+					grid-template-columns: 1fr;
+				}
+			}
+		}
 	}
 
 	&__content {
-
+		display: flex;
+		flex-flow: column nowrap;
 	}
 
 	&__side {

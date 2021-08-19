@@ -1,8 +1,8 @@
-.affiche {
+.p-articles {
 	$self: &;
 
 	&__items {
-		margin: 0 -10px;
+		margin: 0 -10px 40px;
 		display: flex;
 		flex-wrap: wrap;
 	}

@@ -4,43 +4,36 @@
 	font-size: 22px;
 	display: flex;
 	align-items: center;
-	height: 42px;
-	border-bottom: 1px solid #c5c5c5;
-
+	flex-wrap: wrap;
+	// border-bottom: 1px solid #c5c5c5;
+	
 	@include media('<=xxs') {
 		font-size: 19px;
 	}
-
+	
 	@include media('<=xxxs') {
 		font-size: 18px;
 	}
-
+	
 	&__item {
+		border-bottom: 1px solid #c5c5c5 !important;
 		box-sizing: border-box;
 		height: 100%;
-
-		&:not(:last-of-type) {
-			margin-right: 20px;
-			
-			@include media('<=xxs') {
-				margin-right: 10px;
-			}
-		}
+		transition: border-color 0.4s ease;
 
 		> a {
-			line-height: 2.0;
+			box-sizing: border-box;
+			line-height: 1.2;
 			display: block;
 			color: inherit;
 			text-decoration: none;
-			
-			@include media('<=xxs') {
-				line-height: 2.4;
-			}
+			padding: 10px;
+			white-space: pre-wrap;
 		}
 
-		&.active {
-			border-bottom: 2px solid #000;
-			margin-bottom: -1	px;
+		&:hover, &.active {
+			border-bottom: 2px solid #000 !important;
+			margin-bottom: -1px;
 		}
 	}
 }

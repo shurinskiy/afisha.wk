@@ -92,6 +92,12 @@
 		border: 1px solid #e2e2e2;
 		border-radius: 10px;
 		box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+		@keyframes submenu_fade {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		animation: submenu_fade 0.4s ease;
+
 	
 		@include media('<=md') {
 			border: none;
