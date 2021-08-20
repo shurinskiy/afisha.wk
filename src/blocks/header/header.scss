@@ -3,12 +3,13 @@
 	margin-bottom: 30px;
 	
 	&__slider {
-		height: 450px;
+		// height: 450px;
+
 		.owl-stage-outer, .owl-stage, .owl-item {
 			height: 100%;
 		}
 		
-		@include media('<=xxlg') {
+		/* @include media('<=xxlg') {
 			height: 400px;
 		}
 		
@@ -34,7 +35,7 @@
 		
 		@include media('<=xxxs') {
 			height: 100px;
-		}
+		} */
 	}
 
 	&__slider-item {

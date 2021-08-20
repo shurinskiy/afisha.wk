@@ -1,6 +1,17 @@
 .sidebar {
 	$self: &;
 
+	&_dark {
+
+		#{$self}__title {
+			color: #fff;
+		}
+		
+		#{$self}__brief {
+			color: #fff;
+		}
+	}
+
 	&__item {
 
 		&_poster {

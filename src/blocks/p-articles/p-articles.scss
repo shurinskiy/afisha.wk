@@ -9,11 +9,7 @@
 	
 	&__item {
 		margin: 0 10px 30px;
-		width: calc(100% / 3 - 20px);
-		
-		@include media('<=md') {
-			width: calc(100% / 2 - 20px);
-		}
+		width: calc(100% / 2 - 20px);
 		
 		@include media('<=xxxs') {
 			width: calc(100% - 20px);
