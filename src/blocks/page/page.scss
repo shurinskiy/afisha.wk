@@ -20,6 +20,20 @@
 
 	&__filter {
 		display: flex;
+
+		.select__wrapper {
+			font-family: "BR", sans-serif;
+			font-size: 22px;
+			border-bottom: 1px solid #c5c5c5;
+
+			@include media('<=xs') {
+				margin-bottom: 2px;
+			}
+
+			@include media('<=xxs') {
+				font-size: 19px;
+			}
+		}
 	}
 
 	&__inner {
