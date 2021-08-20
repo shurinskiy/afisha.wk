@@ -5,3 +5,4 @@ import "../blocks/culture/culture.js";
 import "../blocks/media/media.js";
 import "../blocks/posters/posters.js";
 import "../blocks/search/search.js";
+import "../blocks/select/select.js";

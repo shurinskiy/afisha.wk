@@ -12,4 +12,9 @@
 	margin: auto auto 40px;
 	width: 100%;
 	max-width: 600px;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: #c3aed3;
+	}
 }

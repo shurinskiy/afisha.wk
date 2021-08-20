@@ -29,9 +29,11 @@
 			text-decoration: none;
 			padding: 10px;
 			white-space: pre-wrap;
+			transition: color 0.4s ease;
 		}
 
 		&:hover, &.active {
+			color: #a059cf;
 			border-bottom: 2px solid #000 !important;
 			margin-bottom: -1px;
 		}
