@@ -42,55 +42,9 @@
 
 	&__socials {
 		margin-left: auto;
-		display: flex;
 
 		@include media('<=xs') {
 			margin: 0;
-		}
-	}
-
-	&__socials-item {
-		display: block;
-		width: 50px;
-		height: 50px;
-		background-color: #787c80;
-		border-radius: 50%;
-		transition: background-color 0.3s ease;
-		
-		&:hover {
-			background-color: #c3aed3;
-		}
-		
-		&:not(:last-child) {
-			margin-right: 15px;
-		}
-
-		&_yout {
-			background: url('#{$images-path}icons-sprite.svg#icon-yout-view-white') center / 30px 22px no-repeat #787c80;
-		}
-
-		&_vk {
-			background: url('#{$images-path}icons-sprite.svg#icon-vk-view-white') center / 28px 17px no-repeat #787c80;
-		}
-
-		&_ok {
-			background: url('#{$images-path}icons-sprite.svg#icon-ok-view-white') center / 16px 26px no-repeat #787c80;
-		}
-
-		&_fb {
-			background: url('#{$images-path}icons-sprite.svg#icon-fb-view-white') center / 14px 28px no-repeat #787c80;
-		}
-
-		&_tgm {
-			background: url('#{$images-path}icons-sprite.svg#icon-tgm-view-white') center / 30px 22px no-repeat #787c80;
-		}
-
-		&_inst {
-			background: url('#{$images-path}icons-sprite.svg#icon-inst-view-white') center / 28px 28px no-repeat #787c80;
-		}
-
-		&_tw {
-			background: url('#{$images-path}icons-sprite.svg#icon-tw-view-white') center / 28px 20px no-repeat #787c80;
 		}
 	}
 

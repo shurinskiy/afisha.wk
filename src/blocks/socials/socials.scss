@@ -1,0 +1,58 @@
+.socials {
+	$self: &;
+	display: flex;
+
+	&_feed {
+
+		#{$self}__item {
+			width: 40px;
+			height: 40px;
+			background-color: #999da1;
+
+			&_yout { background-size: 26px 18px; }
+
+			&_vk { background-size: 23px 13px; }
+
+			&_ok { background-size: 13px 22px; }
+
+			&_fb { background-size: 12px 22px; }
+
+			&_tgm { background-size: 30px 22px; }
+
+			&_inst { background-size: 22px 22px; }
+
+			&_tw { background-size: 28px 20px; }
+		}
+	}
+
+	&__item {
+		display: block;
+		width: 50px;
+		height: 50px;
+		background-color: #787c80;
+		border-radius: 50%;
+		transition: background-color 0.3s ease;
+	
+		&:hover {
+			background-color: #c3aed3;
+		}
+				
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+
+		&_yout { background: url('#{$images-path}icons-sprite.svg#icon-yout-view-white') center / 30px 22px no-repeat #787c80; }
+
+		&_vk { background: url('#{$images-path}icons-sprite.svg#icon-vk-view-white') center / 28px 17px no-repeat #787c80; }
+
+		&_ok { background: url('#{$images-path}icons-sprite.svg#icon-ok-view-white') center / 16px 26px no-repeat #787c80; }
+
+		&_fb { background: url('#{$images-path}icons-sprite.svg#icon-fb-view-white') center / 14px 28px no-repeat #787c80; }
+
+		&_tgm { background: url('#{$images-path}icons-sprite.svg#icon-tgm-view-white') center / 30px 22px no-repeat #787c80; }
+
+		&_inst { background: url('#{$images-path}icons-sprite.svg#icon-inst-view-white') center / 28px 28px no-repeat #787c80; }
+
+		&_tw { background: url('#{$images-path}icons-sprite.svg#icon-tw-view-white') center / 28px 20px no-repeat #787c80; }
+	}
+}

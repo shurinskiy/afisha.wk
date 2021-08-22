@@ -32,7 +32,10 @@
 	&__title {
 		font-family: "MR", sans-serif;
 		font-size: 20px;
-		color: #fff;
+
+		&_dark {
+			color: #fff;
+		}
 	}
 
 	&__brief {

@@ -25,11 +25,12 @@
 			padding-left: 20px;
 			margin-left: auto;
 		}
-
+		
 		&_open {
 			
 			&::after {
-				transform: translateY(-2px) rotate(-180deg);
+				background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-dark');
+				// transform: translateY(-2px) rotate(-180deg);
 			}
 			
 			& + #{$self}__list {

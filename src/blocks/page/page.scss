@@ -34,6 +34,24 @@
 				font-size: 19px;
 			}
 		}
+
+		&_dark {
+			.select__head {
+				color: #fff;
+
+				&::after {
+					background-image: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-white');
+				}
+				
+				&_open {
+					color: #6a6a6a;
+
+					&::after {
+						background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-dark');
+					}
+				}
+			}
+		}
 	}
 
 	&__inner {

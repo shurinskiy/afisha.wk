@@ -5,14 +5,16 @@
 	margin-bottom: 40px;
 	
 	&__inner {
+		display: flex;
+		box-sizing: border-box;
 		max-width: 1240px;
 		margin: 0 auto;
 		width: 100%;
-		box-sizing: border-box;
-		display: flex;
 		position: relative;
+		padding: 0 20px;
 
 		@include media('<=sm') {
+			padding: 0;
 			flex-wrap: wrap;
 		}
 	}

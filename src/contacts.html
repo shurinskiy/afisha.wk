@@ -1,0 +1,37 @@
+@@include("_head.html") 
+@@include("_header.html") 
+
+<section class="contacts contacts-js">
+	<div class="contacts__inner wrapper">
+		<h1 class="contacts__top-title p-title">Контакты</h1>
+		<h2 class="contacts__title">Для СМИ</h2>
+		<div class="contacts__block contacts__block_border">
+			<div class="contacts__block-name">Пресс-служба</div>
+			<div class="contacts__block-values">
+				<a href="tel:35-34-42">35-34-42</a>
+				<a href="mailto:psmkzk@mail.ru">psmkzk@mail.ru</a>
+			</div>
+		</div>
+		<h2 class="contacts__title">Для НКО и авторов грантовых проектов в сфере культуры</h2>
+		<div class="contacts__block">
+			<div class="contacts__block-name">Отдел мониторинга и проектной деятельности</div>
+			<div class="contacts__block-values">
+				<a href="tel:21-99-62">21-99-62</a>
+			</div>
+		</div>
+		<a class="contacts__callback p-more" href="#contacts__callback">Обратная связь</a>
+	</div>
+	<div class="contacts__hidden">
+		<form action="./" class="contacts__form" id="contacts__callback">
+			<h3 class="contacts__form-title p-title">Обратная связь</h3>
+			<input class="contacts__form-field" type="text" placeholder="Контактное лицо">
+			<input class="contacts__form-field" type="text" placeholder="Телефон">
+			<input class="contacts__form-field" type="text" placeholder="Почта">
+			<textarea class="contacts__form-area" rows="1" placeholder="Текст сообщения"></textarea>
+			<input class="contacts__form-submit" type="submit" value="Отправить сообщение">
+			<p class="contacts__form-agree">Нажимая конопку "отправить" вы соглашаетесь с <a href="./">Соглашением об обработке персональных данных</a></p>
+		</form>
+	</div>
+</section>
+
+@@include("_bottom.html") 
