@@ -6917,7 +6917,19 @@ img {
 
 .contacts__block-name {
 	margin-right: auto;
-	font-size: 26px
+	font-size: 26px;
+	line-height: 1.3
+}
+
+@media (max-width:640px) {
+	.contacts__block {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap
+	}
+
+	.contacts__block-name {
+		margin-bottom: 15px
+	}
 }
 
 .contacts__block-values {
