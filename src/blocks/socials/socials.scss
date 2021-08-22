@@ -1,12 +1,15 @@
 .socials {
 	$self: &;
 	display: flex;
+	
+	@include media('<=xs') {
+		flex-wrap: wrap;
+	}
 
 	&_feed {
 
 		#{$self}__item {
-			background-color: #999da1;
-			margin-right: 15px;
+			background-color: #a7abaf;
 		}
 	}
 
@@ -17,13 +20,14 @@
 		background-color: #787c80;
 		border-radius: 50%;
 		transition: background-color 0.3s ease;
+		flex-shrink: 0;
 	
 		&:hover {
 			background-color: #c3aed3;
 		}
 				
 		&:not(:last-child) {
-			margin-right: 10px;
+			margin: 0 10px 10px 0;
 		}
 
 		&_viber { background: url('#{$images-path}icons-sprite.svg#icon-viber-view-white') center / 24px 25px no-repeat #787c80; }
