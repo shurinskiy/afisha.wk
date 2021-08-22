@@ -74,7 +74,8 @@
 
 			#{$self}__side {
 				@include media('<=sm') {
-					display: grid;
+					display: none;
+					// display: grid;
 					grid-template-columns: repeat(3, 1fr );
 					grid-gap: 20px;
 				}
@@ -97,7 +98,8 @@
 
 	&__side {
 		@include media('<=xs') {
-			display: grid;
+			display: none;
+			// display: grid;
 			grid-template-columns: repeat(2, 1fr );
 			grid-gap: 20px;
 		}
