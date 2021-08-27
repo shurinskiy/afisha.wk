@@ -15,6 +15,10 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 		loop: true,
 		items: 1,
 		margin: 0,
+		autoplay: true,
+		smartSpeed: 2000,
+		autoplaySpeed: 3000,
+		autoplayTimeout: 15000,
 		dots: false,
 		nav: false,
 		onInitialized: function(e) {
