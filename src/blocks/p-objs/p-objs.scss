@@ -1,0 +1,35 @@
+.p-objs {
+	$self: &;
+	min-width: 0;
+
+	&__rubric {
+		margin-bottom: 15px;
+	}
+	
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__gallery {
+		margin-bottom: 40px;
+	}
+
+	&__table {
+		margin-bottom: 40px;
+		width: 100%;
+		max-width: 500px;
+
+		tr {
+			border-bottom: 1px solid #ddd;
+		}
+
+		td {
+			vertical-align: top;
+			padding: 15px 5px 3px;
+		}
+	}
+
+	&__socials {
+		margin-top: 40px;
+	}
+}

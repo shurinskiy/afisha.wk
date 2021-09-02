@@ -7,3 +7,6 @@ import "../blocks/posters/posters.js";
 import "../blocks/search/search.js";
 import "../blocks/select/select.js";
 import "../blocks/contacts/contacts.js";
+import "../blocks/p-gallery/p-gallery.js";
+import "../blocks/details/details.js";
+import "../blocks/article/article.js";

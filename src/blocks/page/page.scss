@@ -7,51 +7,8 @@
 		background-color: #404040;
 	}
 
-	&__title {
-		margin-right: 40px;
-	}
-
 	&__head {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		margin-bottom: 30px;
-	}
 
-	&__filter {
-		display: flex;
-
-		.select__wrapper {
-			font-family: "BR", sans-serif;
-			font-size: 22px;
-			border-bottom: 1px solid #c5c5c5;
-
-			@include media('<=xs') {
-				margin-bottom: 2px;
-			}
-
-			@include media('<=xxs') {
-				font-size: 19px;
-			}
-		}
-
-		&_dark {
-			.select__head {
-				color: #fff;
-
-				&::after {
-					background-image: url('#{$images-path}icons-sprite.svg#icon-arr_down-view-white');
-				}
-				
-				&_open {
-					color: #6a6a6a;
-
-					&::after {
-						background-image: url('#{$images-path}icons-sprite.svg#icon-arr_up-view-dark');
-					}
-				}
-			}
-		}
 	}
 
 	&__inner {
@@ -75,7 +32,10 @@
 			#{$self}__side {
 				@include media('<=sm') {
 					display: none;
-					// display: grid;
+				}
+
+				/* @include media('<=sm') {
+					display: grid;
 					grid-template-columns: repeat(3, 1fr );
 					grid-gap: 20px;
 				}
@@ -86,7 +46,7 @@
 
 				@include media('<=xxxs') {
 					grid-template-columns: 1fr;
-				}
+				} */
 			}
 		}
 	}
@@ -99,13 +59,16 @@
 	&__side {
 		@include media('<=xs') {
 			display: none;
-			// display: grid;
+		}
+
+		/* @include media('<=xs') {
+			display: grid;
 			grid-template-columns: repeat(2, 1fr );
 			grid-gap: 20px;
 		}
 
 		@include media('<=xxxs') {
 			grid-template-columns: 1fr;
-		}
+		} */
 	}
 }

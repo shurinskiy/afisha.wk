@@ -25,6 +25,7 @@
 	&__items {
 		position: static;
 		width: calc(100% + 100px);
+		@extend .owl-carousel;
 
 		@include media('<=xxs') {
 			width: 100%;

@@ -3,6 +3,7 @@
 	margin-bottom: 30px;
 	
 	&__slider {
+		@extend .owl-carousel;
 		// height: 450px;
 
 		.owl-stage-outer, .owl-stage, .owl-item {

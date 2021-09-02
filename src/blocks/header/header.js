@@ -8,6 +8,8 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 	$(".gallery__image").colorbox({
 		rel:'gallery__image',
 		photo: true,
+		maxWidth: '95%',
+		maxHeight:'95%',
 		current: ""
 	});
 

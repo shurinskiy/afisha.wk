@@ -64,6 +64,7 @@
 	&__items {
 		position: static;
 		width: calc(100% + 150px);
+		@extend .owl-carousel;
 
 		@include media('<=xxs') {
 			width: 100%;

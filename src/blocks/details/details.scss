@@ -1,0 +1,169 @@
+.details {
+	$self: &;
+	margin-bottom: 100px;
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__side {
+		box-sizing: border-box;
+		padding-right: 30px;
+		width: 60%;
+		
+		@include media('<=md') {
+			width: 55%;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+		}
+	}
+
+	&__rubric {
+		margin-bottom: 20px;
+	}
+	
+	&__title {
+		font-size: 30px;
+		line-height: 1.1;
+		margin-bottom: 25px;
+	}
+	
+	&__author {
+		margin-bottom: 25px;
+
+		span {
+			color: #a059cf;
+		}
+	}
+
+	&__order-btn {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 12px 20px;
+		background-color: #ab8ac4;
+		border-radius: 100px;
+		color: #fff;
+		width: 100%;
+		max-width: 250px;
+		font-size: 18px;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+		margin-bottom: 35px;
+	
+		&:hover {
+			background-color: #c3aed3;
+		}
+	}
+
+	&__info {
+		margin-bottom: 35px;
+	}
+
+	&__features {
+		h3 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		
+		table {
+			width: 100%;
+			max-width: 450px;
+			font-size: 18px;
+		}
+
+		tr {
+			border-bottom: 1px solid #ddd;
+		}
+
+		td {
+			vertical-align: top;
+			padding: 15px 5px 3px;
+		}
+	}
+
+	&__gallery {
+		box-sizing: border-box;
+		min-width: 0;
+		width: 40%;
+		
+		@include media('<=md') {
+			width: 45%;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+			order: -1;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__slider {
+		margin-bottom: 30px;
+		
+		.owl-stage-outer {
+			border-radius: 10px;
+
+			@include media('<=lg') {
+				height: 410px;
+			}
+		}
+
+		.owl-stage, .owl-item {
+			height: 100%;
+		}
+
+		.owl-item {
+			> img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.owl-dots {
+			display: flex;
+			padding-top: 15px;
+			justify-content: center;
+			counter-reset: details-ctr;
+		}
+
+		.owl-dot {
+			@extend %reset-button;
+			flex-shrink: 0;
+			width: 30px;
+			height: 30px;
+			background-color: #ddd !important;
+			border-radius: 50%;
+			margin: 0 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+						
+			&::before {
+				counter-increment: details-ctr;
+				content: counter(details-ctr);
+			}
+
+			&.active::before {
+				color: #a059cf;
+			}
+		}
+	}
+
+	&__price {
+		text-align: center;
+		font-size: 30px;
+		line-height: 1.1;
+		font-family: "MB", sans-serif;
+		
+		@include media('<=sm') {
+			text-align: left;
+		}
+	}
+}

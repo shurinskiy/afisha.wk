@@ -29,6 +29,7 @@
 	&__items {
 		position: static;
 		width: calc(100% + 150px);
+		@extend .owl-carousel;
 
 		.owl-nav {
 			display: block !important;

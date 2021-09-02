@@ -69,6 +69,7 @@
 	}
 
 	&__slider {
+		@extend .owl-carousel;
 		box-sizing: border-box;
 		width: 50%;
 		position: static;
