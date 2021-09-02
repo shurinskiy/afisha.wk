@@ -49,6 +49,10 @@
 			100% {opacity: 1;}
 		}
 		animation: submenu_fade 0.4s ease;
+		
+		@include media('<=xxs') {
+			padding: 60px 20px 20px 40px;
+		}
 	}
 
 	&__link {
