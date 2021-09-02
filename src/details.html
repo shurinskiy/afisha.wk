@@ -3,12 +3,17 @@
 
 <div class="wrapper">
 	<div class="p-head">
-		<div class="p-head__filter">
-			<select class="select">
-				<option value="0">Весь каталог</option>
-				<option value="1">Выставка</option>
-				<option value="2">Онлайн-выставка</option>
-			</select>
+		<div class="p-head__filter menu-4">
+			<div class="menu-4__wrapper">
+				<span class="menu-4__cap">Весь каталог</span>
+				<div class="menu-4__hidden">
+					<a class="menu-4__link" href="./">Изобразительное искусство</a>
+					<a class="menu-4__link" href="./">Изделия народных художественных промыслов</a>
+					<a class="menu-4__link" href="./">Сувениры</a>
+					<a class="menu-4__link" href="./">Производители</a>
+					<a class="menu-4__link" href="./">Онлайн выставка</a>
+				</div>
+			</div>
 		</div>
 		<ul class="p-head__filter menu-3">
 			<li class="menu-3__item"><a href="./">Изобразительное искусство</a></li>
@@ -24,7 +29,7 @@
 				<div class="details__rubric">Онлайн выставка «Подношение десяти драгоценностей»</div>
 				<h2 class="details__title">«Свято место». Караваева Е.</h2>
 				<div class="details__author">Производитель: <span>Караваева Е.</span></div>
-				<a class="details__order-btn" href="./">Отправить заявку</a>
+				<a class="details__order-btn" href="#details__order">Отправить заявку</a>
 				<p class="details__info">Вы можете приобрести этот товар, отправив заявку продавцу</p>
 				<div class="details__features">
 					<h3>Характеристики</h3>
@@ -51,6 +56,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="details__hidden">
+		<form action="./" class="form" id="details__order">
+			<h3 class="form__title p-title">Заявка</h3>
+			<input class="form__field" type="text" placeholder="Контактное лицо">
+			<input class="form__field" type="text" placeholder="Телефон">
+			<input class="form__field" type="text" placeholder="Почта">
+			<input class="form__submit" type="submit" value="Отправить заявку">
+			<p class="form__agree">Нажимая конопку "отправить" вы соглашаетесь с <a href="./">Соглашением об обработке персональных данных</a></p>
+		</form>
+	</div>
+
 </section>
 
 <section class="similar">

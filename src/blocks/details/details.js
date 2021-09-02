@@ -9,4 +9,10 @@
 		nav: false
 	 });
 
+	 $('.details__order-btn').colorbox({
+		inline: true,
+		width : '700px',
+		maxWidth: '95%',
+	});
+
 })();

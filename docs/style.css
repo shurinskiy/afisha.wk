@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-.contacts__form-area,
-.contacts__form-field,
-.contacts__form-submit,
 .details__slider .owl-dot,
+.form__area,
+.form__field,
+.form__submit,
 .search__query,
 .search__submit {
 	-webkit-box-sizing: border-box;
@@ -26,8 +26,8 @@
 	padding: 0
 }
 
-.contacts__form-submit,
 .details__slider .owl-dot,
+.form__submit,
 .search__submit {
 	text-decoration: none;
 	cursor: pointer;
@@ -7099,7 +7099,7 @@ body::before {
 }
 
 .article__content {
-	font-size: 20px;
+	font-size: 19px;
 	line-height: 1.3;
 	margin-bottom: 40px
 }
@@ -7622,75 +7622,6 @@ body::before {
 	display: none
 }
 
-.contacts__form {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 30px
-}
-
-.contacts__form-title {
-	margin-bottom: 20px
-}
-
-.contacts__form-field {
-	display: block;
-	width: 100%;
-	padding: 30px 0 10px;
-	font-size: 20px;
-	border-bottom: 1px solid #bebebe
-}
-
-.contacts__form-area {
-	min-height: 0;
-	display: block;
-	width: 100%;
-	padding: 30px 0 10px;
-	font-size: 20px;
-	border-bottom: 1px solid #bebebe;
-	resize: none;
-	margin-bottom: 30px
-}
-
-.contacts__form-submit {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 15px 0;
-	background-color: #ab8ac4;
-	border-radius: 10px;
-	color: #fff;
-	font-size: 18px;
-	margin: auto auto 40px;
-	width: 100%;
-	max-width: 600px;
-	-webkit-transition: background-color .3s;
-	-o-transition: background-color .3s;
-	transition: background-color .3s
-}
-
-.contacts__form-submit:hover {
-	background-color: #c3aed3
-}
-
-.contacts__form-agree {
-	font-size: 20px
-}
-
-.contacts__form-agree a {
-	display: block;
-	text-decoration: none
-}
-
-.contacts__form-agree a:hover {
-	text-decoration: underline
-}
-
 .culture {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -8111,6 +8042,10 @@ body::before {
 	}
 }
 
+.details__hidden {
+	display: none
+}
+
 .feed__item {
 	margin-bottom: 40px
 }
@@ -8192,6 +8127,74 @@ body::before {
 	.footer__copy {
 		text-align: center
 	}
+}
+
+.form {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 30px
+}
+
+.form__title {
+	margin-bottom: 20px
+}
+
+.form__field {
+	display: block;
+	width: 100%;
+	padding: 30px 0 10px;
+	font-size: 20px;
+	border-bottom: 1px solid #bebebe
+}
+
+.form__area {
+	min-height: 0;
+	display: block;
+	width: 100%;
+	padding: 30px 0 10px;
+	font-size: 20px;
+	border-bottom: 1px solid #bebebe;
+	resize: none
+}
+
+.form__submit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 15px 0;
+	background-color: #ab8ac4;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	margin: 30px auto 40px;
+	width: 100%;
+	max-width: 600px;
+	-webkit-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	transition: background-color .3s
+}
+
+.form__submit:hover {
+	background-color: #c3aed3
+}
+
+.form__agree {
+	font-size: 20px
+}
+
+.form__agree a {
+	display: block;
+	text-decoration: none
+}
+
+.form__agree a:hover {
+	text-decoration: underline
 }
 
 .gallery {
@@ -8859,16 +8862,6 @@ body::before {
 	}
 }
 
-@keyframes submenu_fade {
-	0% {
-		opacity: 0
-	}
-
-	100% {
-		opacity: 1
-	}
-}
-
 .menu-2__subitem {
 	font-family: BR, sans-serif;
 	font-size: 22px;
@@ -8913,6 +8906,18 @@ body::before {
 	}
 }
 
+@media (max-width:640px) {
+	.menu-3 {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-box-pack: start !important;
+		-ms-flex-pack: start !important;
+		justify-content: flex-start !important;
+		overflow: auto;
+		padding-bottom: 2px
+	}
+}
+
 .menu-3_dark .menu-3__item {
 	color: #fff
 }
@@ -8954,27 +8959,101 @@ body::before {
 	margin-bottom: -1px
 }
 
-.n-card {
+.menu-4 {
+	font-family: BR, sans-serif;
+	font-size: 22px;
+	line-height: 1.2
+}
+
+.menu-4__wrapper {
+	border-bottom: 1px solid #c5c5c5
+}
+
+.menu-4__wrapper:hover .menu-4__hidden {
+	display: block
+}
+
+.menu-4__cap {
+	cursor: pointer;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	z-index: 3
+}
+
+.menu-4__cap::after {
+	content: '';
+	display: block;
+	background: url(images/icons-sprite.svg#icon-arr_down-view-dark) center/11px 6px no-repeat;
+	width: 12px;
+	height: 8px;
+	padding-left: 20px;
+	margin-left: auto
+}
+
+.menu-4__hidden {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+	position: absolute;
+	width: calc(100% + 10px);
+	background-color: #fff;
+	top: -10px;
+	left: -10px;
+	z-index: 2;
+	padding: 19px 30px 20px 160px;
+	border: 1px solid #e2e2e2;
+	border-radius: 10px;
+	-webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, .1);
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, .1);
+	-webkit-animation: .4s submenu_fade;
+	animation: .4s submenu_fade
+}
+
+@keyframes submenu_fade {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+.menu-4__link {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	margin: 0 10px 20px;
+	-webkit-transition: color .4s;
+	-o-transition: color .4s;
+	transition: color .4s
+}
+
+.menu-4__link:hover {
+	color: #a059cf
 }
 
 @media (max-width:640px) {
-	.menu-3 {
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		-webkit-box-pack: start !important;
-		-ms-flex-pack: start !important;
-		justify-content: flex-start !important;
-		overflow: auto;
-		padding-bottom: 2px
+	.menu-4__link {
+		display: block
 	}
 
 	.n-card {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap
 	}
+}
+
+.n-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
 }
 
 .n-card__side {
@@ -9405,7 +9484,8 @@ body::before {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	position: relative
 }
 
 .p-head__title {
