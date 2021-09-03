@@ -1,0 +1,47 @@
+.p-search {
+	$self: &;
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__form {
+		margin-bottom: 60px;
+	}
+
+	&__input {
+		@extend %reset-input;
+		font-size: 34px;
+		min-width: 0;
+		width: 100%;
+		padding: 10px 5px;
+		border-bottom: 1px solid #ccc;
+		
+		&::placeholder {
+			color: #888;
+		}
+	}
+
+	&__entry {
+		margin-bottom: 40px;
+	}
+
+	&__entry-rubric {
+		display: block;
+		color: #777;
+		margin-bottom: 3px;
+	}
+	
+	&__entry-title {
+		font-size: 28px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+	
+	&__entry-excerpt {
+		color: #777;
+		font-size: 19px;
+		line-height: 1.3;
+	}
+
+}
